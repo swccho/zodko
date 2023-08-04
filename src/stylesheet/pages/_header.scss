@@ -1,0 +1,52 @@
+header{
+  background-color: $theme;
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+      display: flex;
+      align-items: center;
+      .logo{
+        a{
+          display: block;
+          font-size: 35px;
+          font-weight: 500;
+          margin-right: 50px;
+          color: $white;
+        }
+      }
+      .menu{
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li{
+          display: inline-block;
+          a{
+            display: block;
+            color: $light-500;
+            padding: 30px 20px;
+            text-decoration: none;
+            &:hover{
+              transition: all .3s ease;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .right{
+      a{
+        display: block;
+        color: $light-500;
+        padding: 30px 20px;
+        text-decoration: none;
+        &:hover{
+          transition: all .3s ease;
+          color: $white;
+        }
+      }
+    }
+  }
+}

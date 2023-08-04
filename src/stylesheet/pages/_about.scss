@@ -1,0 +1,27 @@
+.about{
+  padding: 80px 0;
+  background-color: $white;
+  .header{
+    text-align: center;
+    margin-bottom: 40px;
+    .title{
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: 20px;
+      color: $black;
+    }
+  }
+  .content{
+    .left{
+      .text1{
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .text2{
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+    }
+  }
+}

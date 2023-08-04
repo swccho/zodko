@@ -1,0 +1,15 @@
+.theme-btn{
+  background-color: $theme;
+  color: $white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+  &:hover{
+    transition: all .3s ease;
+    background-color: transparent !important;
+    border: 2px solid $theme !important;
+    color: $theme !important;
+  }
+}

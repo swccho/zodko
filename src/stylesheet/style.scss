@@ -1,0 +1,10 @@
+@import "variable";
+@import "global";
+
+body{
+  @import "pages/header";
+  @import "pages/banner";
+  @import "pages/about";
+  @import "pages/service";
+  @import "pages/package";
+}
