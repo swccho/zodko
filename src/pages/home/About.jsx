@@ -3,14 +3,14 @@ import IMG from '../../assets/images/macbook.png';
 const About = () => {
     return (
         <div className="about md:container md:mx-auto ">
-            <div className="header">
+            <div className="header" data-aos="fade-right">
                 <div className="icon">
                     <i className="pe-7s-medal"></i>
                 </div>
                 <div className="title">Clean and Ultra Modern Design</div>
             </div>
-            <div className="content grid grid-cols-2 gap-4">
-                <div className="left">
+            <div className="content grid md:grid-cols-2 gap-4">
+                <div className="left" data-aos="fade-up">
                     <div className="text1 text-slate-400">
                         Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.
                     </div>
@@ -23,7 +23,7 @@ const About = () => {
                     </div>
                     <button className="btn theme-btn">Learn More</button>
                 </div>
-                <div className="right">
+                <div className="right mt-4 md:mt-0" data-aos="fade-left">
                     <div className="img">
                         <img src={IMG} alt=""/>
                     </div>

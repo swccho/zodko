@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home.jsx";
 import Header from "./pages/includes/Header.jsx";
-
+import Footer from "./pages/includes/Footer.jsx";
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <>
         <Header />
         <Home />
+        <Footer />
     </>
   )
 }

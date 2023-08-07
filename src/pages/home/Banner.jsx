@@ -7,7 +7,7 @@ const Banner = () => {
         backgroundImage: `url(${bg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: 'bottom'
+        backgroundPosition: 'center'
     }
     return (
         <div className="banner" style={background}>

@@ -2,9 +2,17 @@
 @import "global";
 
 body{
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
   @import "pages/header";
   @import "pages/banner";
   @import "pages/about";
   @import "pages/service";
   @import "pages/package";
+  @import "pages/company";
+  @import "pages/newsletter";
+  @import "pages/footer";
 }

@@ -1,52 +1,65 @@
 header{
   background-color: $theme;
-  .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  &.desktop{
+    @media screen and (max-width: 991px) {
+      padding: 0 20px!important;
+    }
+    .content{
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      .logo{
-        a{
-          display: block;
-          font-size: 35px;
-          font-weight: 500;
-          margin-right: 50px;
-          color: $white;
-        }
-      }
-      .menu{
-        padding: 0;
-        margin: 0;
+      .left{
         display: flex;
-
-        li{
-          display: inline-block;
+        align-items: center;
+        .logo{
           a{
             display: block;
-            color: $light-500;
-            padding: 30px 20px;
-            text-decoration: none;
-            &:hover{
-              transition: all .3s ease;
-              color: $white;
+            font-size: 35px;
+            font-weight: 500;
+            margin-right: 50px;
+            color: $white;
+          }
+        }
+        .menu{
+          padding: 0;
+          margin: 0;
+          display: flex;
+
+          li{
+            display: inline-block;
+            a{
+              display: block;
+              color: $light-500;
+              padding: 30px 20px;
+              text-decoration: none;
+              &:hover{
+                transition: all .3s ease;
+                color: $white;
+              }
             }
           }
         }
       }
-    }
-    .right{
-      a{
-        display: block;
-        color: $light-500;
-        padding: 30px 20px;
-        text-decoration: none;
-        &:hover{
-          transition: all .3s ease;
-          color: $white;
+      .right{
+        a{
+          display: block;
+          color: $light-500;
+          padding: 30px 20px;
+          text-decoration: none;
+          &:hover{
+            transition: all .3s ease;
+            color: $white;
+          }
         }
       }
     }
+  }
+  &.mobile{
+    display: none;
   }
 }

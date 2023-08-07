@@ -5,12 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <link rel="stylesheet" href="/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="root"></div>
-    <link href="/font/pe-icon-7-stroke.css" rel="stylesheet" />
-    <link href="/font/helper.css" rel="stylesheet" />
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 50,
+        duration: 2000,
+        offset: 120,
+        disable: 'mobile'
+      });
+    </script>
   </body>
 </html>

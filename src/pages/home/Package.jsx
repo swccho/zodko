@@ -2,7 +2,7 @@ import React from 'react';
 
 const Package = () => {
     return (
-        <div className="package">
+        <div className="package" data-aos="fade-up">
             <div className="md:container md:mx-auto">
                 <div className="header">
                     <div className="title">
@@ -13,7 +13,7 @@ const Package = () => {
                         designed for describing your app, agency or business.
                     </div>
                 </div>
-                <div className="content grid grid-cols-3 gap-4">
+                <div className="content grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div className="package-item">
                         <div className="header">
                             <div className="title">Basic</div>
@@ -23,25 +23,25 @@ const Package = () => {
                         <ul className="body">
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-server"></i>
                                 </span>
                                 <span>10 GB Storege</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-graph"></i>
                                 </span>
                                 <span>500 GB Bandwidth</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-mail-open"></i>
                                 </span>
                                 <span>Email Support</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-tools"></i>
                                 </span>
                                 <span>24x7 Support</span>
                             </li>
@@ -57,25 +57,25 @@ const Package = () => {
                         <ul className="body">
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-server"></i>
                                 </span>
                                 <span>10 GB Storege</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-graph"></i>
                                 </span>
                                 <span>500 GB Bandwidth</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-mail-open"></i>
                                 </span>
                                 <span>Email Support</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-tools"></i>
                                 </span>
                                 <span>24x7 Support</span>
                             </li>
@@ -91,25 +91,25 @@ const Package = () => {
                         <ul className="body">
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-server"></i>
                                 </span>
                                 <span>10 GB Storege</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-graph"></i>
                                 </span>
                                 <span>500 GB Bandwidth</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-mail-open"></i>
                                 </span>
                                 <span>Email Support</span>
                             </li>
                             <li>
                                 <span>
-                                    <i className=""></i>
+                                    <i className="pe-7s-tools"></i>
                                 </span>
                                 <span>24x7 Support</span>
                             </li>

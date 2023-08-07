@@ -13,8 +13,14 @@
   .content{
     .service-item{
       text-align: center;
-      margin-bottom: 40px;
       width: 75%;
+      margin: 0 auto 40px;
+      .icon{
+        i{
+          color: $theme;
+          font-size: 48px;
+        }
+      }
       .title{
         font-size: 18px;
         margin: 20px 0;

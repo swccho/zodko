@@ -2,7 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header>
+        <>
+        <header className="desktop">
             <div className="md:container md:mx-auto content">
                 <div className="left">
                     <div className="logo">
@@ -31,6 +32,34 @@ const Header = () => {
                 </div>
             </div>
         </header>
+        <header className="mobile">
+            <div className="top">
+                <div className="logo">
+                    <img src="" alt=""/>
+                </div>
+                <div className="close">
+
+                </div>
+            </div>
+            <ul className="menu">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">Plans</a>
+                </li>
+                <li>
+                    <a href="">Clients</a>
+                </li>
+                <li>
+                    <a href="">Pages</a>
+                </li>
+            </ul>
+        </header>
+        </>
     );
 };
 

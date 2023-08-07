@@ -6,10 +6,20 @@
   border-radius: 50px;
   border: 2px solid transparent;
   letter-spacing: 1px;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
   &:hover{
     transition: all .3s ease;
     background-color: transparent !important;
     border: 2px solid $theme !important;
     color: $theme !important;
+  }
+}
+
+.about, .service, .package, .company, .newsletter, footer{
+  @media screen and (max-width: 991px) {
+    padding: 80px 20px!important;
   }
 }

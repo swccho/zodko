@@ -13,6 +13,12 @@
   .content{
     width: 70%;
     margin: 10px auto 0;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .package-item{
       text-align: center;
       padding: 0 30px;
@@ -21,6 +27,11 @@
         height: calc(100% + 40px);
         position: relative;
         bottom: 20px;
+        @media screen and (max-width: 767px) {
+          bottom: 0;
+          position: static;
+          height: 100%;
+        }
       }
       .header{
         padding-top: 20px;
@@ -45,6 +56,14 @@
           display: block;
           margin-bottom: 15px;
           span{
+            &:first-child{
+              i{
+                margin-right: 7px;
+                font-size: 18px;
+                position: relative;
+                top: 4px;
+              }
+            }
             &.text{
               margin-left: 10px;
             }
