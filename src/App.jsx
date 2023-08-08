@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         AOS.init({
             delay: 50,
-            duration: 2000,
+            duration: 1000,
             offset: 120,
             disable: 'mobile',
         });
