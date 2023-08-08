@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newsletter = () => {
     return (
-        <div className="newsletter" data-aos="fade-left">
+        <div className="newsletter" data-aos="fade-right">
             <div className="md:container md:mx-auto">
                 <div className="header">
                     <div className="title">Be engaged Newsletter</div>

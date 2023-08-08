@@ -1,6 +1,9 @@
 @import "variable";
 @import "global";
 
+html{
+  scroll-behavior: smooth;
+}
 body{
 
   overflow-x: hidden;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Package = () => {
     return (
-        <div className="package" data-aos="fade-up">
+        <div className="package" id="plans" data-aos="fade-up">
             <div className="md:container md:mx-auto">
                 <div className="header">
                     <div className="title">

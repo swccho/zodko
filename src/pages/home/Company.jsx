@@ -7,7 +7,7 @@ import USER1 from '../../assets/images/user.jpg';
 
 const Company = () => {
     return (
-        <div className="company" data-aos="fade-right">
+        <div className="company" id="clients" data-aos="fade-left">
             <div className="md:container md:mx-auto">
                 <div className="header">
                     <div className="title">Trusted by Thousands</div>

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Service = () => {
     return (
-        <div className="service" data-aos="fade-down">
+        <div className="service" id="features" data-aos="fade-right">
             <div className=" md:container md:mx-auto">
                 <div className="header">
                     <div className="title">It's designed for describing your app, agency or business</div>

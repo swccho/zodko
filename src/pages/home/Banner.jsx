@@ -10,7 +10,7 @@ const Banner = () => {
         backgroundPosition: 'center'
     }
     return (
-        <div className="banner" style={background}>
+        <div className="banner" id="banner" style={background}>
             <div className="content">
                 <div className="title">Zodkoo is a fully responsive landing page template</div>
                 <div className="desc">

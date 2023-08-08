@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
     return (
         <>
         <header className="desktop">
@@ -11,16 +12,16 @@ const Header = () => {
                     </div>
                     <ul className="menu">
                         <li>
-                            <a href="">Home</a>
+                            <a href="#banner">Home</a>
                         </li>
                         <li>
-                            <a href="">Features</a>
+                            <a href="#features">Features</a>
                         </li>
                         <li>
-                            <a href="">Plans</a>
+                            <a href="#plans">Plans</a>
                         </li>
                         <li>
-                            <a href="">Clients</a>
+                            <a href="#clients">Clients</a>
                         </li>
                         <li>
                             <a href="">Pages</a>
@@ -35,27 +36,35 @@ const Header = () => {
         <header className="mobile">
             <div className="top">
                 <div className="logo">
-                    <img src="" alt=""/>
+                    <a href="">Zodkoo</a>
                 </div>
-                <div className="close">
-
-                </div>
+                {
+                    showMenu ?  <div className="close">
+                        <a href="javascript:void(0)" onClick={()=> setShowMenu(false)}>
+                            <i className="pe-7s-close-circle"></i>
+                        </a>
+                    </div> : <div className="hamburger" >
+                        <a href="javascript:void(0)" onClick={()=> setShowMenu(true)}>
+                            <i className="pe-7s-menu"></i>
+                        </a>
+                    </div>
+                }
             </div>
-            <ul className="menu">
+            <ul className={`menu ${showMenu && 'active'}`}>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#banner" onClick={()=> setShowMenu(false)}>Home</a>
                 </li>
                 <li>
-                    <a href="">Features</a>
+                    <a href="#features" onClick={()=> setShowMenu(false)}>Features</a>
                 </li>
                 <li>
-                    <a href="">Plans</a>
+                    <a href="#plans" onClick={()=> setShowMenu(false)}>Plans</a>
                 </li>
                 <li>
-                    <a href="">Clients</a>
+                    <a href="#clients" onClick={()=> setShowMenu(false)}>Clients</a>
                 </li>
                 <li>
-                    <a href="">Pages</a>
+                    <a href="" onClick={()=> setShowMenu(false)}>Pages</a>
                 </li>
             </ul>
         </header>
