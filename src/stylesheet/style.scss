@@ -11,11 +11,9 @@ body{
   scrollbar-width: none; /* Hide scrollbar in Firefox */
   -ms-overflow-style: none;
   @import "pages/header";
-  @import "pages/banner";
+  @import "pages/home";
   @import "pages/about";
-  @import "pages/service";
-  @import "pages/package";
-  @import "pages/company";
-  @import "pages/newsletter";
+  @import "pages/contact";
+  @import "pages/jobs";
   @import "pages/footer";
 }

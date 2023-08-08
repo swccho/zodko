@@ -1,18 +1,20 @@
 import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
     return (
         <>
         <header className="desktop">
             <div className="md:container md:mx-auto content">
                 <div className="left">
                     <div className="logo">
-                        <a href="/">Zodkoo</a>
+                        <Link to="/">Zodkoo</Link>
                     </div>
                     <ul className="menu">
                         <li>
-                            <a href="#banner">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
                             <a href="#features">Features</a>
@@ -24,7 +26,21 @@ const Header = () => {
                             <a href="#clients">Clients</a>
                         </li>
                         <li>
-                            <a href="">Pages</a>
+                            <a href="javascript:void(0)" onClick={()=> setShowDropdown(!showDropdown)}>Pages</a>
+                            <ul className={showDropdown && 'active'}>
+                                <li>
+                                    <Link to="/about">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/contact">Contact</Link>
+                                </li>
+                                <li>
+                                    <Link to="/faq">FAQ</Link>
+                                </li>
+                                <li>
+                                    <Link to="/jobs">Jobs</Link>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

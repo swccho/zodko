@@ -5,17 +5,21 @@ import Service from "./Service.jsx";
 import Package from "./Package.jsx";
 import Company from "./Company.jsx";
 import Newsletter from "./Newsletter.jsx";
+import Header from "../includes/Header.jsx";
+import Footer from "../includes/Footer.jsx";
 
 const Home = () => {
     return (
-        <>
+        <div className="home">
+            <Header />
             <Banner />
             <About />
             <Service />
             <Package />
             <Company />
             <Newsletter />
-        </>
+            <Footer />
+        </div>
     );
 };
 

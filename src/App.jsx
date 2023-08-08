@@ -3,8 +3,10 @@ import React,{useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Home from "./pages/home/Home.jsx";
-import Header from "./pages/includes/Header.jsx";
-import Footer from "./pages/includes/Footer.jsx";
+import {Routes, Route, BrowserRouter} from "react-router-dom"
+import About from "./pages/about/About.jsx";
+import Contact from "./pages/contact/Contact.jsx";
+import Jobs from "./pages/jobs/Jobs.jsx";
 
 function App() {
 
@@ -18,10 +20,15 @@ function App() {
     }, [])
   return (
     <>
-        <Header />
-        <Home />
-        <Footer />
-    </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={ <Home/> } />
+                <Route path="/about" element={ <About /> } />
+                <Route path="/contact" element={ <Contact /> } />
+                <Route path="/jobs" element={ <Jobs /> } />
+            </Routes>
+        </BrowserRouter>
+        </>
   )
 }
 
