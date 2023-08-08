@@ -10,11 +10,11 @@ const Banner = () => {
         backgroundPosition: 'center'
     }
     return (
-        <div className="banner" id="banner" style={background}>
+        <div className="banner" id="banner" style={background} data-aos="fade-down">
             <div className="content">
-                <div className="title">Zodkoo is a fully responsive landing page template</div>
+                <div className="title">NA is a fully responsive landing page template</div>
                 <div className="desc">
-                    Zodkoo is a fully responsive landing page built using the latest Bootstrap framework. It's designed for
+                    NA is a fully responsive landing page built using the latest Bootstrap framework. It's designed for
                     describing your app, agency or business. The clean and well commented code allows easy customization of
                     the theme.
                 </div>

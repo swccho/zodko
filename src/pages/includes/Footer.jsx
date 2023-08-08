@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer >
             <div className="md:container md:mx-auto">
                 <div className="content">
                     <div className="menu  grid grid-cols-2  md:grid-cols-4 gap-8">
                         <div className="item">
-                            <div className="title">Zodkoo</div>
+                            <div className="title">NA</div>
                             <ul>
                                 <li>
                                     <a href="">Home</a>
@@ -73,7 +73,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="copy">2023 &copy; Zodkoo</div>
+                    <div className="copy">2023 &copy; NA</div>
                 </div>
             </div>
         </footer>

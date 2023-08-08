@@ -10,7 +10,7 @@ const Header = () => {
             <div className="md:container md:mx-auto content">
                 <div className="left">
                     <div className="logo">
-                        <Link to="/">Zodkoo</Link>
+                        <a href="/">NA</a>
                     </div>
                     <ul className="menu">
                         <li>
@@ -52,7 +52,7 @@ const Header = () => {
         <header className="mobile">
             <div className="top">
                 <div className="logo">
-                    <a href="">Zodkoo</a>
+                    <a href="">NA</a>
                 </div>
                 {
                     showMenu ?  <div className="close">
